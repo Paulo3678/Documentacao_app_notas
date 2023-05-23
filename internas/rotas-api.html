@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotas API - Documentação - APP Notas</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./../assets/css/custom.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="list-group">
+                        <a href="./../index.html" class="list-group-item list-group-item-action">
+                            Home
+                        </a>
+                        <a href="./casos-de-uso.html" class="list-group-item list-group-item-action">Casos de
+                            uso</a>
+                        <a href="./wireframe.html" class="list-group-item list-group-item-action">Wireframes</a>
+                        <a href="./rotas-api.html" class="list-group-item list-group-item-action active">Rotas da
+                            API</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-9">
+                    <h1>Rotas API</h1>
+                    <hr>
+
+                    <div>
+                        <h2>Introdução</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a, odit veritatis dolores ea
+                            similique officiis error pariatur amet dolor? Reprehenderit, beatae. Blanditiis facilis
+                            nobis magnam beatae esse laudantium sed?
+                        </p>
+                    </div>
+                    <p>
+                        <strong>Para ver a documentação completa: </strong>
+                        <a href="https://documenter.getpostman.com/view/27505530/2s93m1ZPme" target="_blank">clique
+                            aqui.</a>
+                    </p>
+                    <hr>
+
+                    <div>
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Tipo Requisição</th>
+                                    <th scope="col">Função</th>
+                                    <th scope="col">URL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="btn btn-warning">POST</span>
+                                    </th>
+                                    <td>Realizar login</td>
+                                    <td>https://faculdadepro1.paulodev367.com.br/aluno/validar</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="btn btn-warning">POST</span>
+                                    </th>
+                                    <td>Adicionar disciplina</td>
+                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="btn btn-success">GET</span>
+                                    </th>
+                                    <td>Buscar dados do aluno</td>
+                                    <td>https://faculdadepro1.paulodev367.com.br/api/aluno</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="btn btn-success">GET</span>
+                                    </th>
+                                    <td>Buscar disciplinas</td>
+                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="btn btn-success">GET</span>
+                                    </th>
+                                    <td>Buscar uma disciplina</td>
+                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina/9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="btn btn-info">PUT</span>
+                                    </th>
+                                    <td>Atualizar disciplina</td>
+                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina/9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span class="btn btn-danger">DELETE</span>
+                                    </th>
+                                    <td>Remover disciplina</td>
+                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina/6</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="pb-0 mb-0">&copy; 2023 Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
