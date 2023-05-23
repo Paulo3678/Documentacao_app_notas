@@ -16,47 +16,53 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="#">App Notas</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./../index.html">Home</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./casos-de-uso.html">Casos de Uso</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./wireframe.html">Wireframes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./rotas-api.html">Rotas da API</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </nav>
+    </header>
+
 
     <main class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-3">
+                <div class="col-12 d-none d-lg-block col-lg-3">
                     <div class="list-group">
                         <a href="./../index.html" class="list-group-item list-group-item-action">
                             Home
                         </a>
-                        <a href="./casos-de-uso.html"
-                            class="list-group-item list-group-item-action active">Casos de
+                        <a href="./casos-de-uso.html" class="list-group-item list-group-item-action active">Casos de
                             uso</a>
                         <a href="./wireframe.html" class="list-group-item list-group-item-action">Wireframes</a>
                         <a href="./rotas-api.html" class="list-group-item list-group-item-action">Rotas da API</a>
@@ -113,103 +119,233 @@
 
                     <div>
                         <h2>Especificação dos casos de uso</h2>
+
                         <table class="table shadow">
                             <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">UC</th>
-                                    <th scope="col">Ator</th>
-                                    <th scope="col">Resumo</th>
-                                    <th scope="col">Pré-condições</th>
-                                    <th scope="col">Pós-condições</th>
-                                </tr>
+                                <th colspan="2">UC001 - Fazer login</th>
                             </thead>
                             <tbody>
-
                                 <tr>
-                                    <th scope="row">UC001 - Fazer login</th>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
-                                    <td>O aluno deve informar nº de cadastro e senha de cadastro para conseguir fazer
-                                        login</td>
-                                    <td>Estar conectado com a internet e estar cadastrado no sistema</td>
-                                    <td>Login realizado</td>
                                 </tr>
-
                                 <tr>
-                                    <th scope="row">UC002 - Excluir disciplina</th>
+                                    <th scope="row">Resumo</th>
+                                    <td>O aluno deve informar nº de cadastro e senha de cadastro para conseguir fazer
+                                        login </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
+                                    <td>O aluno deve informar nº de cadastro e senha de cadastro para conseguir fazer
+                                        login </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
+                                    <td>O aluno deve informar nº de cadastro e senha de cadastro para conseguir fazer
+                                        login </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <th colspan="2">UC002 - Excluir disciplina</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
-                                    <td>Aluno pode selecionar e excluir uma disciplina cadastrada</td>
-                                    <td>Estar logado e ter pelo menos uma disciplina cadastrada</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Resumo</th>
+                                    <td>O aluno deve informar nº de cadastro e senha de cadastro para conseguir fazer
+                                        login </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
+                                    <td>Estar logado e ter pelo menos uma disciplina cadastrada </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
                                     <td>Disciplina removida do sistema</td>
                                 </tr>
+                            </tbody>
+                        </table>
 
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <th colspan="2">UC003 - Adicionar disciplina</th>
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <th scope="row">UC003 - Adicionar disciplina</th>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
-                                    <td>Aluno pode cadastrar uma nova disciplina para visualizar no sistema</td>
-                                    <td>Estar logado e informar pelo menos o nome da disciplina</td>
-                                    <td>Disciplina cadastrada no sistema</td>
                                 </tr>
-
                                 <tr>
-                                    <th scope="row">UC004 - Ver informações da disciplina</th>
+                                    <th scope="row">Resumo</th>
+                                    <td>Aluno pode cadastrar uma nova disciplina para visualizar no sistema </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
+                                    <td>Estar logado e informar pelo menos o nome da disciplina</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
+                                    <td>Estar logado e informar pelo menos o nome da disciplina </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <th colspan="2">UC004 - Ver informações da disciplina</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
-                                    <td>Aluno pode visualizar informações mais detalhadas sobre cada disciplina</td>
-                                    <td>Estar logado e ter pelo menos uma disciplina cadastrada</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Resumo</th>
+                                    <td>Estar logado e informar pelo menos o nome da disciplina </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
+                                    <td>Estar logado e ter pelo menos uma disciplina cadastrada </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
                                     <td>Ser direcionado para tela de informações da disciplina</td>
                                 </tr>
+                            </tbody>
+                        </table>
 
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <th colspan="2">UC005 - Salvar/Alterar/Ver nota 1º e 2º bimestre e exame final</th>
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <th scope="row">UC005 - Salvar/Alterar/Ver nota 1º e 2º bimestre e exame final</th>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
-                                    <td>Aluno pode salvar, alterar ou apenas visualizar a nota do 1º e 2 º bimestre, se
-                                        já tiverem sido informadas pelo próprio, juntamente da nota do exame final </td>
-                                    <td>Estar logado, estar na tela de ver mais informações da disciplina e ter
-                                        informado a nota do 1º, 2º bimestre e nota exame final</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Resumo</th>
+                                    <td>Ser direcionado para tela de informações da disciplina</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
+                                    <td>Ser direcionado para tela de informações da disciplina</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
                                     <td>Sistema irá mostrar os dados da nota do 1º e 2º bimestre junto da nota do exame
                                         final</td>
                                 </tr>
+                            </tbody>
+                        </table>
 
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <th colspan="2">UC006 - Calcular nota mínima para ser aprovado</th>
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <th scope="row">UC006 - Calcular nota mínima para ser aprovado</th>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
-                                    <td>Aluno pode calcular a nota mínima necessária para ser aprovado na disciplina
-                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Resumo</th>
+                                    <td>Sistema irá mostrar os dados da nota do 1º e 2º bimestre junto da nota do exame
+                                        final</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
                                     <td>Estar logado, estar na tela de ver mais informações da disciplina e informado a
-                                        nota do 1º bimestre</td>
+                                        nota do 1º bimestre </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
                                     <td>Nota mínima para ser aprovado mostrada</td>
                                 </tr>
+                            </tbody>
+                        </table>
 
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <th colspan="2">UC007 - Calcular nota final e ver se foi aprovado ou ficaram de exame
+                                    final</th>
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <th scope="row">UC007 - Calcular nota final e ver se foi aprovado ou ficaram de
-                                        exame final</th>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
-                                    <td>Aluno pode ver se já foi aprovado na disciplina ou se ficou de exame final</td>
-                                    <td>Estar logado, estar na tela de ver mais informações da disciplina e ter
-                                        informado nota do 1º e 2º bimestre</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Resumo</th>
+                                    <td>Aluno pode ver se já foi aprovado na disciplina ou se ficou de exame final </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
+                                    <td>Aluno pode ver se já foi aprovado na disciplina ou se ficou de exame final </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
                                     <td>Ver se foi aprovado ou ficou de exame final</td>
                                 </tr>
+                            </tbody>
+                        </table>
 
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <th colspan="2">UC008 - Calcular nota mínima necessária para tirar no exame final</th>
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <th scope="row">UC008 - Calcular nota mínima necessária para tirar no exame final
-                                    </th>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Resumo</th>
                                     <td>Aluno pode calcular a pontuação mínima que precisa tirar para ser aprovado na
-                                        disciplina através do exame final</td>
+                                        disciplina através do exame final </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
                                     <td>Estar logado, estar na tela de ver mais informações da disciplina, ter informado
                                         nota do 1º e 2º bimestre, ter ficado de exame final</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
                                     <td>Nota mínima necessária para tirar no exame final</td>
                                 </tr>
+                            </tbody>
+                        </table>
 
+                        <table class="table shadow">
+                            <thead class="thead-dark">
+                                <th colspan="2">UC009 - Ver se está cursando a disciplina</th>
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <th scope="row">UC009 - Ver se está cursando a disciplina</th>
+                                    <th scope="row">Ator</th>
                                     <td>Aluno</td>
-                                    <td>Aluno pode ver o status se está ou não cursando a disciplina atual. ”Verde” para
-                                        cursando e “Amarelo” para não cursando</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Resumo</th>
+                                    <td>Nota mínima necessária para tirar no exame final</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pré-condições</th>
                                     <td>Estar logado e estar na tela de ver mais informações da disciplina</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Pós-condições</th>
                                     <td>Ver status se está cursando a disciplina</td>
                                 </tr>
                             </tbody>
                         </table>
+
                     </div>
                     <hr>
 

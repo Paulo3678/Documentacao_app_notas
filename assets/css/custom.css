@@ -20,8 +20,9 @@
 }
 
 .list-group-item.active {
-    background-color: red;
-    border-color: red;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
 }
 
 
