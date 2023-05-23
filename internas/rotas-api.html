@@ -12,6 +12,11 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./../assets/css/custom.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -88,76 +93,182 @@
                     </p>
                     <hr>
 
-                    <div>
-                        <table class="table shadow">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">Tipo Requisição</th>
-                                    <th scope="col">Função</th>
-                                    <th scope="col">URL</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        <span class="btn btn-warning">POST</span>
-                                    </th>
-                                    <td>Realizar login</td>
-                                    <td>https://faculdadepro1.paulodev367.com.br/aluno/validar</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <span class="btn btn-warning">POST</span>
-                                    </th>
-                                    <td>Adicionar disciplina</td>
-                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <span class="btn btn-success">GET</span>
-                                    </th>
-                                    <td>Buscar dados do aluno</td>
-                                    <td>https://faculdadepro1.paulodev367.com.br/api/aluno</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <span class="btn btn-success">GET</span>
-                                    </th>
-                                    <td>Buscar disciplinas</td>
-                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <span class="btn btn-success">GET</span>
-                                    </th>
-                                    <td>Buscar uma disciplina</td>
-                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina/9</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <span class="btn btn-info">PUT</span>
-                                    </th>
-                                    <td>Atualizar disciplina</td>
-                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina/9</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <span class="btn btn-danger">DELETE</span>
-                                    </th>
-                                    <td>Remover disciplina</td>
-                                    <td>https://faculdadepro1.paulodev367.com.br/api/disciplina/6</td>
-                                </tr>
+                    <table class="table shadow">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" colspan="2">Realizar login</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tipo Requisição</th>
+                                <td><span class="btn btn-warning">POST</span></td>
+                            </tr>
+                            <tr class="ln-anywhere">
+                                <th scope="row">URL</th>
+                                <td>
+                                    https://faculdadepro1.paulodev367.com.br/aluno/validar
+                                    <button class="btn-copiar" title="Copiar para área de transferência"
+                                        data-url="https://faculdadepro1.paulodev367.com.br/aluno/validar"><i
+                                            class="fa-solid fa-copy"></i></button>
+                                </td>
+                            </tr>
 
+                        </tbody>
+                    </table>
 
-                            </tbody>
-                        </table>
-                    </div>
+                    <table class="table shadow">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" colspan="2">Adicionar disciplina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tipo Requisição</th>
+                                <td><span class="btn btn-warning">POST</span></td>
+                            </tr>
+                            <tr class="ln-anywhere">
+                                <th scope="row">URL</th>
+                                <td>
+                                    https://faculdadepro1.paulodev367.com.br/api/disciplina
+                                    <button class="btn-copiar" title="Copiar para área de transferência"
+                                        data-url="https://faculdadepro1.paulodev367.com.br/api/disciplina"><i
+                                            class="fa-solid fa-copy"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table shadow">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" colspan="2">Buscar dados do aluno</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tipo Requisição</th>
+                                <td><span class="btn btn-success">GET</span></td>
+                            </tr>
+                            <tr class="ln-anywhere">
+                                <th scope="row">URL</th>
+                                <td>
+                                    https://faculdadepro1.paulodev367.com.br/api/aluno
+                                    <button class="btn-copiar" title="Copiar para área de transferência"
+                                        data-url="https://faculdadepro1.paulodev367.com.br/api/aluno"><i
+                                            class="fa-solid fa-copy"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table shadow">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" colspan="2">Buscar disciplinas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tipo Requisição</th>
+                                <td><span class="btn btn-success">GET</span></td>
+                            </tr>
+                            <tr class="ln-anywhere">
+                                <th scope="row">URL</th>
+                                <td>
+                                    https://faculdadepro1.paulodev367.com.br/api/disciplina
+                                    <button class="btn-copiar" title="Copiar para área de transferência"
+                                        data-url="https://faculdadepro1.paulodev367.com.br/api/disciplina"><i
+                                            class="fa-solid fa-copy"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table shadow">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" colspan="2">Buscar uma disciplina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tipo Requisição</th>
+                                <td><span class="btn btn-success">GET</span></td>
+                            </tr>
+                            <tr class="ln-anywhere">
+                                <th scope="row">URL</th>
+                                <td>
+                                    https://faculdadepro1.paulodev367.com.br/api/disciplina/{id}
+                                    <button class="btn-copiar" title="Copiar para área de transferência"
+                                        data-url="https://faculdadepro1.paulodev367.com.br/api/disciplina/{id}">
+                                        <i class="fa-solid fa-copy"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table shadow">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" colspan="2">Atualizar disciplina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tipo Requisição</th>
+                                <td><span class="btn btn-info">PUT</span></td>
+                            </tr>
+                            <tr class="ln-anywhere">
+                                <th scope="row">URL</th>
+                                <td>
+                                    https://faculdadepro1.paulodev367.com.br/api/disciplina/{id}
+                                    <button class="btn-copiar" title="Copiar para área de transferência"
+                                        data-url="https://faculdadepro1.paulodev367.com.br/api/disciplina/{id}">
+                                        <i class="fa-solid fa-copy"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table shadow">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" colspan="2">Remover disciplina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tipo Requisição</th>
+                                <td><span class="btn btn-danger">DELETE</span></td>
+                            </tr>
+                            <tr class="ln-anywhere">
+                                <th scope="row">URL</th>
+                                <td>
+                                    https://faculdadepro1.paulodev367.com.br/api/disciplina/6
+                                    <button class="btn-copiar" title="Copiar para área de transferência"
+                                        data-url="https://faculdadepro1.paulodev367.com.br/api/disciplina/6"><i
+                                            class="fa-solid fa-copy"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
 
                 </div>
             </div>
         </div>
     </main>
 
+    <div class="texto-copiado-msg">
+        <span>Texto copiado para área de transferência.</span>
+    </div>
     <footer class="bg-dark text-light p-4">
         <div class="container">
             <div class="row">
@@ -178,6 +289,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script src="./../assets/js/copia-area-transferencia.js"></script>
 </body>
 
 </html>
