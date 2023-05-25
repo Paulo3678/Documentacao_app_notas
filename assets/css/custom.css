@@ -52,6 +52,27 @@
     line-break: anywhere;
 }
 
+.telas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.telas img {
+    width: 30%;
+}
+
+@media (max-width: 576px) {
+    .telas {
+        justify-content: center;
+    }
+
+    .telas img {
+        width: 100%;
+    }
+
+}
+
 .btn-copiar {
     border: none;
     background-color: transparent;
